@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MONGODB</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="C:\Users\91888\Downloads\personal-blog-website-main\assets\css\style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+<body class="light-theme">
+    <header>
+
+        <div class="container">
+    
+          <nav class="navbar">
+    
+            <a href="#">
+              <img src="./assets/images/logo-light.svg" alt="SimpleBlog logo" width="150" class="logo-light">
+              <img src="./assets/images/logo-dark.svg" alt="SimpleBlog logo" width="150" class="logo-dark">
+            </a>
+    
+            <div class="btn-group">
+    
+              <button class="theme-btn theme-btn-mobile light">
+                <ion-icon name="moon" class="moon"></ion-icon>
+                <ion-icon name="sunny" class="sun"></ion-icon>
+              </button>
+    
+              <button class="nav-menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+              </button>
+    
+            </div>
+            <div class="flex-wrapper">
+
+                <ul class="desktop-nav">
+      
+                  <li>
+                    <a href="C:\Users\91888\Downloads\personal-blog-website-main\index.html" class="nav-link">Home</a>
+                  </li>
+      
+                  <li>
+                    <a href="C:\Users\91888\Downloads\personal-blog-website-main\Contact.html" class="nav-link">About Me</a>
+                  </li>
+      
+                  <li>
+                    <a href="C:\Users\91888\Downloads\personal-blog-website-main\Contact.html" class="nav-link">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Review</a>
+                  </li>
+      
+                </ul>
+                <button class="theme-btn theme-btn-desktop light">
+                    <ion-icon name="moon" class="moon"></ion-icon>
+                    <ion-icon name="sunny" class="sun"></ion-icon>
+                  </button>
+        
+                </div>
+                <div class="mobile-nav">
+
+                  <button class="nav-close-btn">
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+        
+                  <div class="wrapper">
+        
+                    <p class="h3 nav-title">Main Menu</p>
+        
+                    <ul>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                      </li>
+        
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">About Me</a>
+                      </li>
+        
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                      </li>
+                    </ul>
+        
+                  </div>
+                
+
+                 
+      
+              </div>
+      
+            </nav>
+      
+          </div>
+      
+        </header>
+      
+
+        <main>
+
+            <!--
+              - #HERO SECTION
+            -->
+        
+            <div class="hero">
+        
+              <div class="container">
+        
+                <div class="left">
+        
+                  <h1 class="h1">
+                    Hi, Let's talk about<b> MONGO&nbsp; DB </b>
+                    
+                  </h1>
+        
+                  <p class="h3">
+                   Building Microservices with <abbr title="Accessibility">Dropwizard</abbr>
+                    Mongo DB and docker.
+                  </p>
+                   </div>
+
+        <div class="right">
+
+          <div class="pattern-bg"></div>
+          <div class="img-box">
+            <img src="C:\Users\91888\Downloads\personal-blog-website-main\assets\images\mongo.png" alt="Mongo DB" class="hero-img">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="main">
+
+      <div class="container">
+
+        <!--
+          - BLOG SECTION
+        -->
+
+        <div class="blog">
+        <h2 class="h2">What is Mongo DB?</h2>
+        <div class="blog-card-group">
+          <div class="blog-card">
+            <div class="blog-card-mongo">
+              <p class="blog-content">
+                
+In the ever-evolving landscape of software development, building robust and scalable microservices has become a cornerstone for modern applications. Microservices architecture offers several advantages, including scalability, flexibility, and easier maintenance. To implement such architecture effectively, developers often rely on powerful tools and technologies. In this guide, we'll delve into the fusion of three such technologies: <span><b>MongoDB, Dropwizard, and Docker</b></span>, to create efficient microservices.
+<br> <br>
+<b>Understanding the Technologies</b>
+<br> <br>
+<b>MONGO DB:</b> MongoDB is a popular NoSQL database that stores data in flexible, JSON-like documents. Its scalability and performance make it an excellent choice for microservices architecture, where handling large volumes of data is common.
+<br><br>
+<b>Dropwizard:</b> Dropwizard is a Java framework designed for building high-performance, RESTful web services. It provides out-of-the-box support for various features like configuration, logging, and monitoring, enabling developers to focus on building business logic rather than dealing with infrastructure concerns.
+<br><br>
+<b>Docker:</b> Docker is a containerization platform that simplifies the deployment and management of applications. With Docker, you can package your microservices and their dependencies into lightweight containers, making them easy to deploy consistently across different environments.
+<br><br>
+<b>Setting Up the Environment</b>
+<br><br>
+<b>1.Install Docker:</b> Begin by installing Docker on your development machine. Docker provides installation guides for various operating systems on its official website.
+<br><br>
+<b>2. Set Up MongoDB</b>: You can either install MongoDB directly on your machine or use a Docker container for it. Docker provides an official MongoDB image that you can easily pull and run as a container.
+<br><br>
+<b>3. Create a Dropwizard Project:</b> Use Maven or Gradle to create a new Dropwizard project. Dropwizard's website offers detailed documentation and examples to help you get started quickly.
+<br><br>
+ <b>Building Microservices</b>
+ <br><br>
+
+<b>1.Define Your Services: </b>Identify the different components of your application and define them as individual microservices. Each microservice should have a clear responsibility and communicate with other services via well-defined APIs.
+<br><br>
+<b>2. Implement Business Logic:</b> Write the business logic for each microservice using Java and Dropwizard. This includes defining resources, handling requests, and interacting with the MongoDB database using MongoDB Java driver or a higher-level library like Morphia or Spring Data MongoDB.
+<br><br>
+<b>3. Containerize Your Microservices :</b> Write Dockerfiles for each microservice to define their dependencies and runtime environment. Dockerfiles specify how to build the Docker images for your microservices.
+<br><br>
+<b>4. Compose Your Services:</b> Use Docker Compose to define and manage the multi-container Docker applications. Docker Compose allows you to specify the configuration of your microservices, including networking, volumes, and environment variables.
+<br><br>
+<b>Deploying and Scaling</b>
+<br><br>
+<b>1. Local Development:</b> Docker enables you to run your microservices locally in isolated containers, mimicking the production environment. This allows developers to test their code in a consistent environment before deployment.
+<br><br>
+<b>2. Continuous Integration and Deployment (CI/CD):</b> Integrate your microservices with CI/CD pipelines to automate the build, test, and deployment processes. Tools like Jenkins, Travis CI, or GitLab CI can be used for this purpose.
+<br><br>
+<b>3. Horizontal Scaling:</b> As your application grows, you may need to scale individual microservices to handle increased traffic. Docker Swarm or Kubernetes can be used for orchestration and scaling of containers across multiple nodes.
+<br><br>
+<b>Monitoring and Maintenance</b>
+<br><br>
+<b>1. Logging and Monitoring:</b> Implement logging and monitoring solutions to track the performance and health of your microservices. Tools like Prometheus, Grafana, or ELK stack (Elasticsearch, Logstash, and Kibana) can be used for this purpose.
+<br><br>
+<b>2. Health Checks:</b> Implement health checks in your microservices to ensure they are running correctly. Dropwizard provides built-in support for health checks, which can be used to monitor the state of your application.
+<br><br>
+<b>3. Versioning and Upgrades:</b> Manage the versioning of your microservices and plan for rolling upgrades to avoid downtime. Docker allows you to easily deploy new versions of your microservices without affecting the overall system.
+<br><br>
+ <b>Conclusion</b>
+<br><br>
+Building microservices with MongoDB, Dropwizard, and Docker offers a powerful combination for developing scalable and maintainable applications. By leveraging the strengths of each technology, developers can create modular, independent services that can be easily deployed and scaled as needed. With careful planning and proper implementation, this approach can lead to more efficient development workflows and robust applications capable of meeting the demands of modern software environments.
+                
+              </p>
+
+
+            </div>
+
+          </div>
+        
+        </div>
+      
+                
+      </main>
+      <footer>
+
+        <div class="container">
+    
+          <div class="wrapper">
+    
+            <a href="#" class="footer-logo">
+              <img src="./assets/images/logo-light.svg" alt="SimpleBlog Logo" width="150" class="logo-light">
+              <img src="./assets/images/logo-dark.svg" alt="SimpleBlog Logo" width="150" class="logo-dark">
+            </a>
+    
+            <p class="footer-text">
+              Learn about Web accessibility, Web performance, and Database management.
+            </p>
+    
+          </div>
+    
+          <div class="wrapper">
+    
+            <p class="footer-title">Quick Links</p>
+    
+            <ul>
+    
+              <li>
+                <a href="#" class="footer-link">Advertise with us</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">About Us</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Contact Us</a>
+              </li>
+    
+            </ul>
+    
+          </div>
+    
+          <div class="wrapper">
+    
+            <p class="footer-title">Legal Stuff</p>
+    
+            <ul>
+    
+              <li>
+                <a href="#" class="footer-link">Privacy Notice</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Cookie Policy</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Terms Of Use</a>
+              </li>
+    
+            </ul>
+    
+          </div>
+    
+        </div>
+    
+       
+       
+    
+      </footer>
+    
+    
+    
+    
+    
+      <script src="./assets/js/script.js"></script>
+    
+    
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+    
+    </html>
+    
+          
+          
+          
+    
+
+
+</body>
